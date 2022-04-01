@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> COVID-19 </title>
+<style type="text/css">
+body{
+background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_11/3265846/200310-coronavirus-2x1-al-1310.gif);
+/*background-repeat: no-repeat;*/
+width: 100vw; 
+height: 100vh; 
+margin: 0 auto; 
+background-size: cover; }
+}
+
+.titulo{
+  color: white;
+}
+
+.button{
+font-size: 30px;
+border:  3px  red solid;
+border-radius: 20px;
+width: 500px;
+background-color: #e3e6e1;
+}
+
+.button:hover{
+       background-color: #e68383;
+       width: 550px;
+       height: 50px;
+}
+
+.true{
+  display: none;
+}
+.maria{
+  display: block;
+  background-color: #6b1610;
+  font-size: 25px;
+  border-radius: 10px;
+}
+#botaoSelecionado{
+          width: 600px;
+          height: 60px;
+        }
+#botaoSelecionado:hover {
+        color: white;
+        }
+
+</style>
+</head>
+<body>
+ <div id="titulo"></dialog> <center> <h1> Orientações sobre o vírus COVID-19 </h1></center></div>
+
+<form>
+  <center><p> <input type="button" value="Você é idoso?" class="button" onclick="pegarDados('Você é idoso?');"></p></center>
+  
+  <center><p> <input type="button" value="Você sofre de problemas respiratórios?" class="button" onclick="pegarDados('Você sofre de problemas respiratórios?');"></p></center>
+  
+  <center><p> <input type="button" value="Você é diabético?" class="button" onclick="pegarDados('Você é diabético?');"></p></center>
+  
+  <center><p> <input type="button" value="Você é saudável?" class="button" onclick="pegarDados('Você é saudável?');"></p></center>
+  
+</form>
+<center><p class="true" id="botaoSelecionado"></p></center>
+
+  <script src="scriptCo.js"></script>
+</body>
+</html>
